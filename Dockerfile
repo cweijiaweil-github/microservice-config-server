@@ -1,9 +1,9 @@
-FROM java:8
+FROM openjdk:8u191-jre-alpine3.9
 
 VOLUME /tmp
 
 ADD /target/microservice-config-server-0.0.1-SNAPSHOT.jar microservice-config-server-0.0.1-SNAPSHOT.jar
-RUN bash -c 'touch /microservice-config-server-0.0.1-SNAPSHOT.jar'
+
 
 EXPOSE 8077
 
